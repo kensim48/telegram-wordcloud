@@ -6,6 +6,8 @@ Telegram WordCloud converts all the texts you have sent on Telegram into a fun w
 ## Instructions
 1. Export your Telegram chats to a JSON file by clicking on `Settings > Advanced > Export Telegram data`, and ensure the following settings are selected:
 
+![screenshot](images/export_screenshot.png "Screenshot of Telegram Export")
+
 Note: The export process can take a while, so please be patient, grab a ☕. Mine took around 20 mins
 
 ### For Windows
