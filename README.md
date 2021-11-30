@@ -12,7 +12,9 @@ Note: The export process can take a while, so please be patient, grab a ☕. Min
 
 ### For Windows
 2. Download the latest version of `Telegram_WordCloud.exe` from [here]()
-3. Drag and drop the JSON file into the `Telegram_WordCloud.exe`
+3. Drag and drop the JSON file into the `Telegram_WordCloud.exe` as shown below:
+
+![opening_exe](images/opening_exe.gif "Gif of opening the exe")
 
 ### For Linux/MacOS
 2. Clone the repository

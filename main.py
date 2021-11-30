@@ -19,6 +19,7 @@ def resource_path(relative_path):
 
     return os.path.join(base_path, relative_path)
 
+
 # Recursively search for words in text messages
 def text_to_words(answer, messages_long, ignored_words):
     try:
@@ -39,7 +40,9 @@ def text_to_words(answer, messages_long, ignored_words):
 if __name__ == "__main__":
     # Parsing arguments
     if len(sys.argv) < 2:
-        print("Please enter the name of the file you want to use")
+        print(
+            "Please enter the name of the json file, or drag the json file into the .exe"
+        )
         sys.exit(1)
     elif len(sys.argv) == 2:
         telegram_json = sys.argv[1]
@@ -68,7 +71,7 @@ if __name__ == "__main__":
         user_name = data["personal_information"]["last_name"]
     else:
         exit("Incorrect settings selected when exporting JSON")
-    
+
     print("📝Reorganizing messages from {}...".format(user_name))
     # Grabs list of all messages, format is a list of lists, where inner list belongs to a single recipient
     list_of_messages = [x["messages"] for x in data["chats"]["list"] if "name" in x]
@@ -113,12 +116,12 @@ if __name__ == "__main__":
     plt.axis("off")
 
     # Saving word cloud
-    if getattr(sys, 'frozen', False):
+    if getattr(sys, "frozen", False):
         application_path = os.path.dirname(sys.executable)
     elif __file__:
         application_path = os.path.dirname(__file__)
     saved_filename = os.path.join(application_path, save_filename)
     print("💾Saving word cloud to {}...".format(saved_filename))
     plt.savefig(saved_filename, bbox_inches="tight", pad_inches=0)
-    if getattr(sys, 'frozen', False):
+    if getattr(sys, "frozen", False):
         k = input("Press enter to exit")
