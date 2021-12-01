@@ -48,7 +48,11 @@ if __name__ == "__main__":
         telegram_json = sys.argv[1]
         save_filename = "wordcloud.png"
         ignored_words = set()
-    elif len(sys.argv) >= 3:
+    elif len(sys.argv) == 3:
+        telegram_json = sys.argv[1]
+        save_filename = sys.argv[2]
+        ignored_words = set()
+    elif len(sys.argv) > 3:
         telegram_json = sys.argv[1]
         save_filename = sys.argv[2]
         ignored_words = sys.argv[3]
