@@ -13,7 +13,7 @@ Telegram WordCloud converts all the texts you have sent on Telegram into a fun w
 Note: The export process can take a while, so please be patient, grab a ☕. Mine took around 20 mins
 
 ### For Windows
-2. Download the latest version of `Telegram_WordCloud.exe` from [here](https://github.com/kensim48/telegram-wordcloud/releases/download/v0.1/Telegram_WordCloud.exe)
+2. Download the latest version of `Telegram_WordCloud.exe` from [here](https://github.com/kensim48/telegram-wordcloud/releases/download/v0.2/Telegram_WordCloud.exe)
 3. Drag and drop the JSON file into the `Telegram_WordCloud.exe` as shown below:
 
 ![opening_exe](images/opening_exe.gif "Gif of opening the exe")
