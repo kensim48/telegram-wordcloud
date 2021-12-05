@@ -62,8 +62,14 @@ if __name__ == "__main__":
         data = json.load(data_file)
 
     # Tries to get user's name
-    if "first_name" in data["personal_information"]:
-        if "last_name" in data["personal_information"]:
+    if (
+        "first_name" in data["personal_information"]
+        and len(data["personal_information"]["first_name"]) != 0
+    ):
+        if (
+            "last_name" in data["personal_information"]
+            and len(data["personal_information"]["last_name"]) != 0
+        ):
             user_name = (
                 data["personal_information"]["first_name"]
                 + " "
